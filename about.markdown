@@ -1,18 +1,27 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
+image: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<p>
+  I’m an AI Engineer at <a href="https://euleris.ai" target="_blank">Euleris</a>. 
+  I completed my master’s in Data Science from Florida International University. 
+  I enjoy learning, implementing, reflecting, and growing through new challenges. 
+  My experience spans Google Cloud, deep learning, agentic frameworks, and full-stack development. 
+  I also enjoy running and reading books.
+</p>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+<p>
+  Check back on this website from time to time for my upcoming posts and project updates.
+</p>
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+<p>
+  Don’t be shy — reach me at 
+  <a href="mailto:venkatasaitarunmunduri@gmail.com">venkatasaitarunmunduri@gmail.com</a>.
+</p>
 
 
-[jekyll-organization]: https://github.com/jekyll
+
+
