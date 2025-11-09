@@ -17,13 +17,13 @@ header {
   gap: 1.5rem;
 
   a {
-    color: var(--muted-color);
+    color: var(--text-color);
   text-decoration: none;
   transition: color --transition-speed ease;
   }
 
   a:active, a:hover {
-  color: var(--text-color);
+  color: var(--muted-color);
   border-bottom: 2px solid var(--text-color);
 
 }
