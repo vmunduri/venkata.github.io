@@ -67,6 +67,16 @@
   .company:hover,.duration:hover,.location:hover{
     color:var(--text-color);
   }
+
+  .section-right ul {
+  list-style-position: outside;
+  margin-left: 1.5rem;   /* clean indentation */
+  line-height: 1.8;      /* increases vertical spacing between lines */
+}
+
+.section-right li {
+  margin-bottom: 0.75rem;  /* adds space between bullet points */
+}
 }
 
 }
