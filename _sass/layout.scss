@@ -1,0 +1,60 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;   /* profile column narrower than text */
+  gap: 1.5rem;                        /* space between columns */
+  align-items: start;
+  margin: 2rem 4rem;                /* top/bottom 2rem, left/right 4rem */
+
+  .image {
+  width: clamp(180px, 25vw, 260px); /* min 180px, ideal 25% of viewport, max 260px */
+  height: auto;
+  border-radius: 0.75rem;
+  background: radial-gradient(circle at center, #1a1a1a 60%, #000 100%);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 1rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted-color);
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+  }
+
+  a:hover {
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+  }
+
+  .icon {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 1rem;
+  }
+
+  .arrow {
+    font-size: 0.9rem;
+    vertical-align: baseline;
+    opacity: var(--opacity);
+  }
+}
+
+
+}
+
+/* Stack at small widths */
+@media (max-width: 600px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 1rem;
+  }
+}

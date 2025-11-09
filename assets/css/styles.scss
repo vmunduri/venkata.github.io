@@ -1,7 +1,9 @@
 ---
 ---
+
 @import "main";
 @import "header";
+@import "layout";
 
 :root{
     --bg-color:black;
@@ -32,7 +34,7 @@ transition: background-color var(--transition-speed) ease, color var(--transitio
 
 a {
   color: var(--text-color);
-  text-decoration: underline;
+  text-decoration: none;
   transition: opacity var(--transition-speed) ease;
 }
 
