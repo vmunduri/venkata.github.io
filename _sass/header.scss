@@ -1,0 +1,63 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+
+  a {
+    color: var(--muted-color);
+  text-decoration: none;
+  transition: color --transition-speed ease;
+  }
+
+  a:active, a:hover {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+
+}
+}
+
+
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--text-color);
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--bg-color);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 1rem 2rem;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+

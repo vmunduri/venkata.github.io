@@ -1,0 +1,51 @@
+---
+---
+@import "main";
+@import "header";
+
+:root{
+    --bg-color:black;
+    --text-color:white;
+    --muted-color: #ababab;
+    --transition-speed: 0.3s;
+    --opacity:0.8;
+}
+
+@media (prefers-color-scheme: light) {
+
+    :root{
+    --bg-color:white;
+    --text-color:black;
+    --muted-color: #555;
+    
+  
+    }
+}
+/* || GENERAL STYLES */
+body{
+background-color: var(--bg-color);
+color: var(--text-color);
+font-family: 'Schibsted Grotesk', sans-serif;
+padding: 1rem 2rem;
+transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+
+
+a {
+  color: var(--text-color);
+  text-decoration: underline;
+  transition: opacity var(--transition-speed) ease;
+}
+
+a:hover {
+  opacity: var(--opacity);
+}
+
+
+.arrow {
+  font-size: 1rem;          /* same as paragraph text */
+  vertical-align: baseline; /* aligns with text line */
+  opacity: var(--opacity);             /* optional subtle look */
+}
+
+
+}

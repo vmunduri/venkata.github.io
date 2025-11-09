@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <header>
+        <div class="site-title">Venkata Sai Tarun Munduri</div>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        {% include navigation.html %}
+    </header>
+
+    <main>
+    {{ content }}
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-toggle');
+        const nav = document.getElementById('nav');
+        btn.onclick = () => nav.classList.toggle('active');
+    </script>
+  </body>
+</html>
