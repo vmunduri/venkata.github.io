@@ -18,6 +18,9 @@
     position:sticky;
     top:0;
   }
+  .content{
+    max-width: 800px; margin: auto;
+  }
 
 .links {
   display: flex;
@@ -71,7 +74,7 @@
   .section-right ul {
   list-style-position: outside;
   margin-left: 1.5rem;   /* clean indentation */
-  line-height: 1.8;      /* increases vertical spacing between lines */
+  line-height: 1.7;      /* increases vertical spacing between lines */
 }
 
 .section-right li {
