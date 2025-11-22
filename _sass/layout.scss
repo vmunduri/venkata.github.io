@@ -94,7 +94,13 @@
     gap: 1.5rem;
     margin: 1rem;
    
+    .section-right ul {
+    padding-left: 19px;
+    margin-left: 0;
+    
+    }
   }
+
   }
   
 }
@@ -106,9 +112,6 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin: 1rem;
-    .profile{
-    position:static;
-  }
   }
   
 }
