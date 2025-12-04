@@ -24,9 +24,42 @@
     </footer>
 
     <script>
+        // Mobile menu toggle
         const btn = document.getElementById('menu-toggle');
         const nav = document.getElementById('nav');
-        btn.onclick = () => nav.classList.toggle('active');
+        if (btn) {
+            btn.onclick = () => nav.classList.toggle('active');
+        }
+
+        // Theme toggle
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        const html = document.documentElement;
+        const icon = themeToggleBtn ? themeToggleBtn.querySelector('i') : null;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            html.classList.add('dark');
+            if (icon) icon.className = 'fas fa-moon';
+        } else {
+            html.classList.remove('dark');
+            if (icon) icon.className = 'fas fa-sun';
+        }
+
+        // Theme toggle click handler
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', () => {
+                if (html.classList.contains('dark')) {
+                    html.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                    if (icon) icon.className = 'fas fa-sun';
+                } else {
+                    html.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                    if (icon) icon.className = 'fas fa-moon';
+                }
+            });
+        }
     </script>
   </body>
 </html>

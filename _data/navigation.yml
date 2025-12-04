@@ -1,2 +1,8 @@
-- name: Blog
-  link: /blogs/
+- name: Home
+  link: /
+- name: About
+  link: /about/
+- name: Posts
+  link: /posts/
+- name: theme-toggle
+  id: theme-toggle-btn

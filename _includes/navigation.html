@@ -1,5 +1,13 @@
-<nav class="nav" id="nav">
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
-</nav>
+<div class="nav-container">
+  <nav class="nav" id="nav">
+    {% for item in site.data.navigation %}
+      {% if item.id == "theme-toggle-btn" %}
+        <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i class="fas fa-sun"></i>
+        </button>
+      {% else %}
+        <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+</div>

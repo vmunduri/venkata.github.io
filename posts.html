@@ -1,0 +1,37 @@
+---
+layout: default
+title: Posts
+permalink: /posts/
+---
+
+<div class="layout-full">
+  <div class="content">
+    <section class="section">
+      <div class="section-heading">
+        <hr/>
+        <h2>Posts</h2>
+        <hr/>
+      </div>
+      <div class="section-content posts-list">
+        {% if site.posts.size == 0 %}
+          <article class="empty-state">
+            <p>No posts yet. Check back soon for upcoming articles on AI engineering, machine learning, and cloud systems.</p>
+          </article>
+        {% else %}
+          {% for post in site.posts %}
+            <article class="post-card">
+              <div class="post-meta">
+                <time class="post-date">{{ post.date | date: "%B %d, %Y" }}</time>
+              </div>
+              <h3><a href="{{ post.url }}" class="post-title">{{ post.title }}</a></h3>
+              {% if post.excerpt %}
+                <p class="post-excerpt">{{ post.excerpt }}</p>
+              {% endif %}
+              <a href="{{ post.url }}" class="read-more">Read more →</a>
+            </article>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </section>
+  </div>
+</div>
