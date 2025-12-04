@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-        <a href="/"><div class="site-title">Venkata Sai Tarun Munduri</div></a>
+        <a href="/"><div class="site-title" {% if page.url == "/" %}style="visibility: hidden;"{% endif %}>Venkata Sai Tarun Munduri</div></a>
         <button class="menu-toggle" id="menu-toggle">☰</button>
         {% include navigation.html %}
     </header>
