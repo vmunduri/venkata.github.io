@@ -295,6 +295,17 @@
       line-height: 1.8;
       margin-bottom: 2rem;
       color: var(--foreground);
+
+      a {
+        color: var(--secondary-foreground);
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
     }
   }
 }
