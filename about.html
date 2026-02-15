@@ -25,9 +25,9 @@ permalink: /about/
             <ul class="description">
               <li>Designed and deployed an end-to-end AI-driven Interactive Training platform on GCP using Cloud Run, Cloud SQL, and Cloud Storage.</li>
               <li>Architected a multi-service LLM workflow (Frontend → Django backend → LangGraph server) with secure authentication handshakes and service-to-service IAM controls.</li>
-              <li>Built a structured PPTX → JSON → database ingestion pipeline using LangGraph agent workflows to support course generation and inference flows.</li>
-              <li>Implemented streaming LLM responses to the frontend UI using LangGraph update events for real-time conversational experiences.</li>
-              <li>Owned GCP infrastructure setup from scratch, including IAM role design, service accounts, Cloud Run services/jobs, Cloud SQL configuration, and deployment workflows.</li>
+              <li>Built a PPTX → JSON → database ingestion pipeline with LangGraph, incorporating context window management to optimize token usage for course generation.</li>
+              <li>Implemented streaming LLM responses with retries, timeouts, and graceful fallbacks for reliable real-time interactions.</li>
+              <li>Owned GCP infrastructure setup from scratch, including IAM role design, service accounts, Cloud Run, Cloud SQL configuration, and deployment workflows.</li>
               <li>Established CI/CD pipelines with Cloud Build and Artifact Registry; integrated LangSmith tracing for agent observability and debugging.</li>
               <li>Engineered prompt workflows and tool orchestration logic to ensure structured, reliable content generation from presentation inputs.</li>
               <li>Implemented backend analytics tracking and integrated Mailjet for transactional email workflows.</li>
