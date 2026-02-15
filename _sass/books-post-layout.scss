@@ -1,0 +1,119 @@
+/* Year in books page */
+.books-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.books-hero {
+  margin-bottom: 2rem;
+
+  h1 {
+    margin: 0.35rem 0 0.75rem;
+    font-size: 2.4rem;
+    color: var(--secondary-foreground);
+  }
+}
+
+.books-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted-foreground);
+}
+
+.books-intro {
+  margin: 0;
+  max-width: 70ch;
+}
+
+.books-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(130deg, var(--card), var(--muted));
+}
+
+.books-section.reverse {
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.books-section.reverse .books-copy {
+  order: 2;
+}
+
+.books-section.reverse .books-image-wrap {
+  order: 1;
+}
+
+.books-copy h2 {
+  margin: 0 0 0.6rem;
+  color: var(--secondary-foreground);
+}
+
+.books-copy p {
+  margin: 0;
+}
+
+.books-image-wrap {
+  margin: 0;
+}
+
+.books-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+
+.books-note {
+  margin-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .books-page {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .books-page {
+    padding: 1rem;
+  }
+
+  .books-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .books-section,
+  .books-section.reverse {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1.25rem 0;
+    padding: 1rem;
+  }
+
+  .books-section.reverse .books-copy,
+  .books-section.reverse .books-image-wrap {
+    order: initial;
+  }
+}
+
+@media (max-width: 600px) {
+  .books-page {
+    padding: 0.6rem;
+  }
+
+  .books-hero h1 {
+    font-size: 1.6rem;
+  }
+}

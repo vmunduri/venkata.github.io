@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<article class="books-page">
+  <header class="books-hero">
+    <p class="books-kicker">{{ page.date | date: "%Y" }} Reading Reflection</p>
+    <h1>{{ page.title | default: "My Year In Books" }}</h1>
+    <p class="books-intro">
+      A visual recap of my reading year, favorite genres, and progress highlights.
+    </p>
+  </header>
+
+  <section class="books-section">
+    <div class="books-copy">
+      <h2>Full-Year Snapshot</h2>
+      <p>
+        This dashboard captures my complete reading activity for the year, with every finished title in one place.
+      </p>
+    </div>
+    <figure class="books-image-wrap">
+      <img class="books-image" src="/assets/img/2025 Books Read.jpeg" alt="Books read list for the year">
+    </figure>
+  </section>
+
+  <section class="books-section reverse">
+    <div class="books-copy">
+      <h2>Genre Mix</h2>
+      <p>
+        I mixed technical reading with fiction and reflective writing, which kept the pace balanced and the momentum strong.
+      </p>
+    </div>
+    <figure class="books-image-wrap">
+      <img class="books-image" src="/assets/img/geners.jpg" alt="Genre breakdown for books">
+    </figure>
+  </section>
+
+  <section class="books-section">
+    <div class="books-copy">
+      <h2>Challenge Progress</h2>
+      <p>
+        The yearly challenge helped maintain consistency week-to-week and made long-form reading a daily habit.
+      </p>
+    </div>
+    <figure class="books-image-wrap">
+      <img class="books-image" src="/assets/img/reading_challenge.png" alt="Reading challenge progress">
+    </figure>
+  </section>
+
+  <section class="books-section reverse">
+    <div class="books-copy">
+      <h2>Year In One Cover</h2>
+      <p>
+        A single cover image that represents the reading year and ties together the journey.
+      </p>
+    </div>
+    <figure class="books-image-wrap">
+      <img class="books-image" src="/assets/img/year_in_books.jpg" alt="Year in books cover image">
+    </figure>
+  </section>
+
+  {% if content and content != "" %}
+    <section class="books-note">
+      {{ content }}
+    </section>
+  {% endif %}
+</article>
